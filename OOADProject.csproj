@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E13489C9-5C8D-410F-875F-E7D41BDB4B19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OOADProject</RootNamespace>
+    <AssemblyName>OOADProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChildForms\FormAREmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormAREmployee.Designer.cs">
+      <DependentUpon>FormAREmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormCalSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormCalSalary.Designer.cs">
+      <DependentUpon>FormCalSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormChangePassword.Designer.cs">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormCheckRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormCheckRequest.Designer.cs">
+      <DependentUpon>FormCheckRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormCreateAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormCreateAcc.Designer.cs">
+      <DependentUpon>FormCreateAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormERequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormERequest.Designer.cs">
+      <DependentUpon>FormERequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormListEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormListEmployee.Designer.cs">
+      <DependentUpon>FormListEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormPaycheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormPaycheck.Designer.cs">
+      <DependentUpon>FormPaycheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormProfile.Designer.cs">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormRate.Designer.cs">
+      <DependentUpon>FormRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormRequest.Designer.cs">
+      <DependentUpon>FormRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\FormSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\FormSalary.Designer.cs">
+      <DependentUpon>FormSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassAccount.cs" />
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployee.Designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManager.Designer.cs">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RJDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RJTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RJTextBox.Designer.cs">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChildForms\FormAREmployee.resx">
+      <DependentUpon>FormAREmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormCalSalary.resx">
+      <DependentUpon>FormCalSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormChangePassword.resx">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormCheckRequest.resx">
+      <DependentUpon>FormCheckRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormCreateAcc.resx">
+      <DependentUpon>FormCreateAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormERequest.resx">
+      <DependentUpon>FormERequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormListEmployee.resx">
+      <DependentUpon>FormListEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormPaycheck.resx">
+      <DependentUpon>FormPaycheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormProfile.resx">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormRate.resx">
+      <DependentUpon>FormRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormRequest.resx">
+      <DependentUpon>FormRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\FormSalary.resx">
+      <DependentUpon>FormSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployee.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManager.resx">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RJTextBox.resx">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3280979.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ephoto360.com_163e31e5f8d188.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3280979.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4103062.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4103051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarWhite.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
